@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
 Route::get('/', function () {
-    return view('home');
+    $data = [
+        'nome' => 'Lorenzo',
+        'cognome' => 'Martini',
+        'professione' => 'Svilppatore',
+        'livello' => 'Meno de junior',
+    ];
+
+    return view('home', compact('data'));
 });

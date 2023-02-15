@@ -7,6 +7,12 @@
         <title>Home</title>
     </head>
     <body>
-        <h1>Hello World</h1>
+        <main>
+            <h1>Hello World</h1>
+            <p>Nome: {{ $data['nome'] }}</p>
+            <p>Cognome: {{ $data['cognome'] }}</p>
+            <p>Professione: {{ $data['professione'] }}</p>
+            <p>Livello: {{ $data['livello'] }}</p>
+        </main>
     </body>
 </html>
